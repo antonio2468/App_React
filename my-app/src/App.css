@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-menu{
+  list-style-type: none; /*eliminar Puntos*/
+  margin: 0;
+  padding: 0;
+  display: flex; /*Ordenar Horizontalmente*/
+  justify-content: space-around;/*Espacio entre cada uno*/
+  background-color: #333;
+  align-items: center;
+  position: fixed;
+  top: 10px; /*Ubicacion parte superior*/
+  left: 400px; /*Posicion Izquierda*/
+  right: 0;
+  width: 50%;
+  z-index: 1000;
+  height: 60px;
+  border-radius: 5px;
+
+}
+.App-menu-item{
+  margin: 0 10px;
+}
+.App-menu-item a {
+  text-decoration: none; /* Sin subrayado */
+  color: white; /* Texto blanco */
+  font-size: 16px; /* Ajusta el tamaño del texto */
+  padding: 10px 15px; /* Relleno interno */
+}
+
+.App-menu-item a:hover {
+  background-color: #575757; /* Fondo diferente al pasar el ratón */
+  border-radius: 5px; /* Bordes redondeados */
+}
+.App-text{
+  color:aqua;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color:dimgray;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: red;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
