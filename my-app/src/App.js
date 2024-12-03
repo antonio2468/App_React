@@ -26,7 +26,6 @@ function App() {
           Learn React
         </a> */}
         <Router>
-          <div>
             <ul className='App-menu'>
               <li className='App-menu-item'> 
                 <Link to="/home">Inicio</Link>
@@ -41,7 +40,6 @@ function App() {
                 <Link to="/profile">Perfil</Link>
               </li>
             </ul>
-          </div>
           <Routes>
               <Route path='/home' element={<Home/>}/>
               <Route path='/contact' element={<Contact/>}/>
@@ -49,7 +47,15 @@ function App() {
               <Route path='/profile/:name' element={<Profile/>}/>
           </Routes>
         </Router>
+        
       </header>
+      <footer className="App-footer">
+        <p>&copy; {new Date().getFullYear()} Mi Aplicación React </p>
+        <p>Desarrollado por Antonio Cortés</p>
+      </footer>
+
+       {/* Footer */}
+      
     </div>
   );
 }

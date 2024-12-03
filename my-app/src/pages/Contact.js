@@ -1,7 +1,8 @@
-export default function Contact() {
-  return(
-    <div>
-        <h4>Contato</h4>
-    </div>
-  )
-};
+import React from "react";
+
+export default function Carousel() {
+
+  return (
+   <h1>Contactanos</h1>
+  );
+}

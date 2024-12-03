@@ -3,8 +3,12 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 11vmin;
   pointer-events: none;
+  left: 0;
+  position: fixed;
+  top: 5px;
+  left: 300px; /*Posicion Izquierda*/
 }
 .App-menu{
   list-style-type: none; /*eliminar Puntos*/
@@ -19,11 +23,24 @@
   left: 400px; /*Posicion Izquierda*/
   right: 0;
   width: 50%;
-  z-index: 1000;
   height: 60px;
   border-radius: 5px;
 
 }
+.App-footer {
+  display: flex;              /* Habilita Flexbox */
+  justify-content: center;    /* Centra horizontalmente el contenido */
+  align-items: center;        /* Centra verticalmente el contenido */
+  position: fixed;            /* Fija el footer en la parte inferior */
+  bottom: 0;                  /* Posición en la parte inferior */
+  left: 0;                    /* Empieza desde el borde izquierdo */
+  width: 100%;                /* Ocupa todo el ancho */
+  background-color: #333;     /* Fondo oscuro */
+  color: white;               /* Texto en blanco */
+  padding: 0;              /* Espaciado interno */
+  z-index: 1000;              /* Asegura que esté por encima de otros elementos */
+}
+
 .App-menu-item{
   margin: 0 10px;
 }
@@ -32,6 +49,7 @@
   color: white; /* Texto blanco */
   font-size: 16px; /* Ajusta el tamaño del texto */
   padding: 10px 15px; /* Relleno interno */
+  
 }
 
 .App-menu-item a:hover {
@@ -68,6 +86,6 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(1000deg);
   }
 }
